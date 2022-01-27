@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.divider {
+  width: 100%;
+  border-bottom: 1px black solid;
+  margin-top: 10px;
+}
+
+.question {
+  width: 100%;
+  border-bottom: 1px lightgrey solid;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-delete {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+
+.action-delete:hover {
+  text-decoration: underline;
+}
+
+.question-status {
+  display: flex;
+  flex-direction: row;
+}
+
+.question-status div {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.question-status .disabled {
+  color: lightgrey;
+}
+
+.status-Accepted {
+  color: green;
+}
+
+.status-Rejected {
+  color: red;
+}
+
+.status-Unanswered {
+  color: darkgrey;
+}
